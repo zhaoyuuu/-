@@ -8,8 +8,9 @@ module.exports = {
       { text: 'External', link: 'https://github.com/zhaoyuuu' },
     ],
     sidebar: [
-      ['/handwritten/debounce','1 实现一个防抖函数（debounce）'],
-      ['/handwritten/throttle' , '2 实现一个节流函数（throttle）' ]
+      ['/handwritten/debounce','1 实现防抖函数（debounce）'],
+      ['/handwritten/throttle' , '2 实现节流函数（throttle）'],
+      ['/handwritten/instanceof' , '3 实现instanceof'],
     ]
   }
 }
