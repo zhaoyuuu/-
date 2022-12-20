@@ -11,6 +11,7 @@ module.exports = {
       ['/handwritten/debounce','1 实现防抖函数（debounce）'],
       ['/handwritten/throttle' , '2 实现节流函数（throttle）'],
       ['/handwritten/instanceof' , '3 实现instanceof'],
+      ['/handwritten/new' , '4 实现new的过程'],
     ]
   }
 }
