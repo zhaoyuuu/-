@@ -12,6 +12,7 @@ module.exports = {
       ['/handwritten/throttle' , '2 实现节流函数（throttle）'],
       ['/handwritten/instanceof' , '3 实现instanceof'],
       ['/handwritten/new' , '4 实现new的过程'],
+      ['/handwritten/call' , '5 实现call方法'],
     ]
   }
 }
