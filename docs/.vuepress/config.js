@@ -15,6 +15,7 @@ module.exports = {
       ['/handwritten/call' , '5 实现call方法'],
       ['/handwritten/apply' , '6 实现apply方法'],
       ['/handwritten/bind' , '7 实现bind方法'],
+      ['/handwritten/deepClone' , '8 实现深拷贝'],
     ]
   }
 }
