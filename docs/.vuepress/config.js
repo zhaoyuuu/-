@@ -14,6 +14,7 @@ module.exports = {
       ['/handwritten/new' , '4 实现new的过程'],
       ['/handwritten/call' , '5 实现call方法'],
       ['/handwritten/apply' , '6 实现apply方法'],
+      ['/handwritten/bind' , '7 实现bind方法'],
     ]
   }
 }
