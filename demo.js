@@ -1,4 +1,11 @@
-const arr = [1,2,3]
+function _setTimeout(fn, wait) {
+  const timer = setInterval(() => {
+    fn()
+    clearInterval(timer)
+  }, wait);
+}
 
-const cloneArr = JSON.parse(JSON.stringify(arr))
-console.log(cloneArr instanceof Array);  // object   问题：改变了构造函数（Array => Object）
+function func() {
+  console.log('触发');
+}
+_setTimeout(func, 1000)
