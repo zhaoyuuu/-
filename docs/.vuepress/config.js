@@ -17,6 +17,7 @@ module.exports = {
       ['/handwritten/bind' , '7 实现bind方法'],
       ['/handwritten/deepClone' , '8 实现深拷贝'],
       ['/handwritten/setInterval(setTimeout)' , '9 实现setInterval和setTimeout'],
+      ['/handwritten/array_collection' , '10 数组合集'],
     ]
   }
 }
