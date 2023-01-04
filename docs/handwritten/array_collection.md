@@ -178,8 +178,3 @@ const isValid = n => n < 4
 console.log(arr1._some(isValid));  // true
 console.log(arr2._some(isValid));  // false  若收到一个空数组，此方法在任何情况下都会返回 true
 ```
-
-## 7 实现flat方法
-```js
-
-```
