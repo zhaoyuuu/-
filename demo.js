@@ -1,40 +1,16 @@
-function ajax(url) {
-  // 1. 创建 xhr 实例对象
-  const xhr = new XMLHttpRequest()
-  // 2. 设置处理服务器响应
-  xhr.onreadystatechange = () => {
-    if(xhr.readyState === 4) {
-      if(xhr.status >= 200 && xhr.status < 300) {
-        // 处理响应...
-        const res = xhr.responseText
-        console.log(res);
-      }
-    }
+function search(list, target) {
+  // 这里假设 给定的list数组是递增的
+  let left = 0, right = list.length - 1
+  while(left <= right) {
+    let mid = Math.floor((left + right) / 2)
+    if(list[mid] === target) return mid
+    else if(list[mid] > target) right = mid - 1
+    else if(list[mid] < target) left = mid + 1
   }
-  // 3. 通过调用 HTTP 请求对象的 open() 和 send() 方法，发送请求
-  xhr.open('get', url)
-  xhr.send()
-}
-
-function ajax_promise(url) {
-  return new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest()
-    xhr.onreadystatechange = () => {
-      if(xhr.readyState === 4) {
-        if(xhr.status >= 200 && xhr.status < 300) {
-          resolve(xhr.responseText)
-        }
-        else {
-          reject('fail!')
-        }
-      }
-    }
-    xhr.open('get', url)
-    xhr.send()
-  })
+  return -1
 }
 
 // 使用
-const url = '/data.json'
-ajax(url).then(res => console.log(res))
-  .catch(reason => console.log(reason))
+const arr = [-1,0,3,5,9,12]
+const searchIndex = search(arr, 9)
+console.log(searchIndex);  // 4

@@ -20,6 +20,7 @@ module.exports = {
       ['/handwritten/array_collection' , '10 数组合集'],
       ['/handwritten/promise_collection' , '11 Promise合集'],
       ['/handwritten/ajax' , '12 实现AJAX'],
+      ['/handwritten/sort' , '13 手写常见排序'],
     ]
   }
 }
