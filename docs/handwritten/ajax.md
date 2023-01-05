@@ -1,3 +1,5 @@
+## 1 原生实现
+```js
 function ajax(url) {
   // 1. 创建 xhr 实例对象
   const xhr = new XMLHttpRequest()
@@ -6,7 +8,7 @@ function ajax(url) {
     if(xhr.readyState === 4) {
       if(xhr.status >= 200 && xhr.status < 300) {
         // 处理响应...
-        const res = xhr.responseText
+        const res = JSON.parse(xhr.responseText)
         console.log(res);
       }
     }
@@ -15,14 +17,17 @@ function ajax(url) {
   xhr.open('get', url)
   xhr.send()
 }
+```
 
+## 2 Promise封装
+```js
 function ajax_promise(url) {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest()
     xhr.onreadystatechange = () => {
       if(xhr.readyState === 4) {
         if(xhr.status >= 200 && xhr.status < 300) {
-          resolve(xhr.responseText)
+          resolve(JSON.parse(xhr.responseText))
         }
         else {
           reject('fail!')
@@ -36,5 +41,7 @@ function ajax_promise(url) {
 
 // 使用
 const url = '/data.json'
-ajax(url).then(res => console.log(res))
+ajax(url)
+  .then(res => console.log(res))
   .catch(reason => console.log(reason))
+```

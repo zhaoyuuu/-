@@ -19,6 +19,7 @@ module.exports = {
       ['/handwritten/setInterval(setTimeout)' , '9 实现setInterval和setTimeout'],
       ['/handwritten/array_collection' , '10 数组合集'],
       ['/handwritten/promise_collection' , '11 Promise合集'],
+      ['/handwritten/ajax' , '12 实现AJAX'],
     ]
   }
 }
