@@ -21,6 +21,7 @@ module.exports = {
       ['/handwritten/promise_collection' , '11 Promise合集'],
       ['/handwritten/ajax' , '12 实现AJAX'],
       ['/handwritten/sort' , '13 手写常见排序'],
+      ['/handwritten/Object' , '14 Object合集'],
     ]
   }
 }
